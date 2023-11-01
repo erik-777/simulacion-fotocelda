@@ -10,14 +10,15 @@ let bucket = `test_entiot`;
 const listPoints = {
   point1: new Point("device_frmpayload_data_AUTOMODE").floatField("value", 1),
   point2: new Point("device_frmpayload_data_DIMMING").floatField("value", 250),
-  point3: new Point("device_frmpayload_data_E1").floatField("value", 6),
+  point3: new Point("device_frmpayload_data_E1").floatField("value", 0),
   point4: new Point("device_frmpayload_data_F1").floatField(
     "value",
-    getRandomIntInclusive(58, 60)
+    getRandomIntInclusive(59, 60)
   ),
   point5: new Point("device_frmpayload_data_I1").floatField(
     "value",
-    getRandomIntInclusive(540, 570)
+    0
+    //getRandomIntInclusive(540, 570)
   ),
   point6: new Point("device_frmpayload_data_LAT").floatField(
     "value",
@@ -25,25 +26,27 @@ const listPoints = {
   ),
   point7: new Point("device_frmpayload_data_LON").floatField(
     "value",
-    getRandomIntInclusive(0, 1)
+    0.96
+    //getRandomIntInclusive(0, 1)
   ),
   point8: new Point("device_frmpayload_data_MANUALMODE").floatField("value", 0),
   point9: new Point("device_frmpayload_data_P1").floatField(
     "value",
-    getRandomIntInclusive(126, 127)
+    0 //getRandomIntInclusive(123, 127)
   ),
-  point10: new Point("device_frmpayload_data_PF1").floatField("value", 1),
+  point10: new Point("device_frmpayload_data_PF1").floatField("value", 0),
   point11: new Point("device_frmpayload_data_STA").floatField(
     "value",
     getRandomIntInclusive(0, 1)
   ),
   point12: new Point("device_frmpayload_data_TEMPERATURA_INTERNA").floatField(
     "value",
-    getRandomIntInclusive(24, 25)
+    21
+    //getRandomIntInclusive(22, 25)
   ),
   point13: new Point("device_frmpayload_data_VL1").floatField(
-    "value",
-    getRandomIntInclusive(230, 237)
+    "value",0
+    //getRandomIntInclusive(230, 237)
   ),
   // point14: new Point('device_status_margin').floatField('value', getRandomIntInclusive(0,1)),
 };
